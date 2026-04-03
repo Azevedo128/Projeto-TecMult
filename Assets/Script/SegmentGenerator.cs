@@ -1,27 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class SegmentGenerator: MonoBehaviour
 {
-    public GameObject segmentMap01;
-    public GameObject segmentMap02;
-    public GameObject segmentMap03;
-    public GameObject segmentMap04;
-    public GameObject segmentMap05;
-    public GameObject segmentMap06;
-    public GameObject segmentMap07;
+    public GameObject[] segment;
 
-    void Start()
+    [SerializeField] int zPos=50;
+    [SerializeField] bool CreateSegment = false;
+    [SerializeField] int SegmentNum;
+
+
+    void Update()
     {
-        StartCoroutine(SegmentGen());
+        if (CreateSegment == false)
+        {
+            CreateSegment=true;
+            StartCoroutine(SegmentGen());
+        }
     }
 
     IEnumerator SegmentGen()
     {
-        yield return new WaitForSeconds(10);
-        segmentMap01.SetActive(true);
-        yield return new WaitForSeconds(10);
-        segmentMap02.SetActive(true);
+        SegmentNum = Random.Range(0, 3);
+        Instantiate(segment[SegmentNum], new Vector3(0, 0, zPos), Quaternion.identity);
+        zPos +=50;
+        yield return new WaitForSeconds(5);
+        CreateSegment = false;
     }
 }
