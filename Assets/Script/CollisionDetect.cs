@@ -13,6 +13,7 @@ public class CollisionDetect : MonoBehaviour
     {
        StartCoroutine(CollisionEnd());
     }
+    
 
     IEnumerator CollisionEnd()
     {
