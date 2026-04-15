@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 public class CollisionDetect : MonoBehaviour
 {
     [SerializeField] GameObject thePlayer;
@@ -10,9 +10,15 @@ public class CollisionDetect : MonoBehaviour
     [SerializeField] GameObject MainCamera;
     [SerializeField] GameObject FadeOut;
     void OnTriggerEnter(Collider other)
+    
     {
+        if (other.CompareTag("Coin"))
+    {
+        return; // ignora completamente
+    }else
        StartCoroutine(CollisionEnd());
     }
+
     
 
     IEnumerator CollisionEnd()
@@ -23,6 +29,8 @@ public class CollisionDetect : MonoBehaviour
         MainCamera.GetComponent<Animator>().Play("CollisionCam");
         yield return new WaitForSeconds(2);
         FadeOut.SetActive(true);
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(0);
     }
 }
 
