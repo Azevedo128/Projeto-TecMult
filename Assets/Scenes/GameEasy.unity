@@ -269,7 +269,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 21485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 579bbbb42ca2d62419d00f3ac54e9801, type: 3}
+  m_Script: {fileID: 11500000, guid: 758dd411f16575b47ad385f71b7686a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionDetect
   thePlayer: {fileID: 1721772624}

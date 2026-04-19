@@ -269,7 +269,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 21485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 579bbbb42ca2d62419d00f3ac54e9801, type: 3}
+  m_Script: {fileID: 11500000, guid: dbf9b1d4d32d08641baef454a0af30e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionDetect
   thePlayer: {fileID: 1721772624}
@@ -8570,11 +8570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579bbbb42ca2d62419d00f3ac54e9801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionDetect
-  thePlayer: {fileID: 1721772624}
-  PlayerAnim: {fileID: 222437241}
-  CollisionFX: {fileID: 1373281847}
-  MainCamera: {fileID: 330585543}
-  FadeOut: {fileID: 84171901}
 --- !u!1 &222793801 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1051370914222626, guid: d7de6c400fc6dce4e847672adb026364, type: 3}
@@ -66739,11 +66734,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579bbbb42ca2d62419d00f3ac54e9801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionDetect
-  thePlayer: {fileID: 1721772624}
-  PlayerAnim: {fileID: 222437241}
-  CollisionFX: {fileID: 1373281847}
-  MainCamera: {fileID: 330585543}
-  FadeOut: {fileID: 84171901}
 --- !u!1 &1598183836 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1150461584060438, guid: 836ca07fc69b4184ca14265c7d24030d, type: 3}

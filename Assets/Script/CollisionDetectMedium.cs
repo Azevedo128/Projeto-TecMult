@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.SceneManagement;
-public class CollisionDetect : MonoBehaviour
+public class CollisionDetectMedium : MonoBehaviour
 {
     [SerializeField] GameObject thePlayer;
     [SerializeField] GameObject PlayerAnim;
