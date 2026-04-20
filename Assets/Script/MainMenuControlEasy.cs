@@ -19,5 +19,7 @@ public class MainMenuControlEasy : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(5);
+        MasterInfo.CoinCount = 0;
+        MasterInfo.DistanceRun=0;
     }
 }

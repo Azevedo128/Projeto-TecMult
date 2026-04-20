@@ -19,5 +19,7 @@ public class MainMenuControlHard : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(4);
+        MasterInfo.CoinCount = 0;
+        MasterInfo.DistanceRun=0;
     }
 }

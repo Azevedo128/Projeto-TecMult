@@ -19,5 +19,7 @@ public class MainMenuControlMedium : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(1);
+        MasterInfo.CoinCount = 0;
+        MasterInfo.DistanceRun=0;
     }
 }
