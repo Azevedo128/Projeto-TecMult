@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Rendering;
+//using UnityEditor.Rendering;
 using UnityEngine;
 
 public class SegmentGenerator: MonoBehaviour
@@ -26,7 +26,7 @@ public class SegmentGenerator: MonoBehaviour
         SegmentNum = Random.Range(0, segment.Length);
         Instantiate(segment[SegmentNum], new Vector3(0, 0, zPos), Quaternion.identity);
         zPos +=50;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         CreateSegment = false;
     }
 }
