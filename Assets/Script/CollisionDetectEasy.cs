@@ -24,7 +24,7 @@ public class CollisionDetectEasy : MonoBehaviour
     IEnumerator CollisionEnd()
     {
         CollisionFX.Play();
-        thePlayer.GetComponent<PlayerMovement>().enabled=false;
+        thePlayer.GetComponent<PlayerMovementEasy>().enabled=false;
         PlayerAnim.GetComponent<Animator>().Play("Stumble Backwards");
         MainCamera.GetComponent<Animator>().Play("CollisionCam");
         yield return new WaitForSeconds(2);

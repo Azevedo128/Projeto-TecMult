@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovementEasy : MonoBehaviour
 {
-    public float PlayerSpeed = 2;
-    public float horizontalSpeed = 3;
-    public float rightBorder = 8f;
-    public float leftBorder = -8f;
+    public float PlayerSpeed = 4;
+    public float horizontalSpeed = 6;
+    public float rightBorder = 12.5f;
+    public float leftBorder = -12.5f;
     [SerializeField] bool isRunning;
 
     void Update()
@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     }
     IEnumerator AddDistance()
     {
-        yield return new WaitForSeconds(0.65f);
+        yield return new WaitForSeconds(0.98f);
         MasterInfo.DistanceRun +=1;
         isRunning=false;
     }
