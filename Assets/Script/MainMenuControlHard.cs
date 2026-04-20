@@ -18,6 +18,6 @@ public class MainMenuControlHard : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(4);
     }
 }

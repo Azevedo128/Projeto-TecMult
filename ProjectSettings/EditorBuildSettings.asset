@@ -26,6 +26,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenuHard.unity
     guid: c6000a8f88cdac542a3ec028f60a6d71
+  - enabled: 1
+    path: Assets/Scenes/GameOverEasy.unity
+    guid: 32b44dfcfec77a943b8a386f5d49ce0a
+  - enabled: 1
+    path: Assets/Scenes/GameOverMedium.unity
+    guid: 14676b5965009c74ebcb7ff4efb6176e
+  - enabled: 1
+    path: Assets/Scenes/GameOverHard.unity
+    guid: f5c5b3db15626a840ac73880576f0d4f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -31,7 +31,7 @@ public class CollisionDetectEasy : MonoBehaviour
         FadeOut.SetActive(true);
         yield return new WaitForSeconds(2);
         MasterInfo.CoinCount = 0;
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(7);
     }
 }
 

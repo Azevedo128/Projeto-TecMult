@@ -31,7 +31,7 @@ public class CollisionDetectMedium : MonoBehaviour
         FadeOut.SetActive(true);
         yield return new WaitForSeconds(2);
         MasterInfo.CoinCount = 0;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(8);
     }
 }
 

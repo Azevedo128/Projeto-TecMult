@@ -6,6 +6,8 @@ public class MasterInfo: MonoBehaviour
     [SerializeField] GameObject CoinDisplay;
     [SerializeField] GameObject RunDisplay;
     public static int DistanceRun;
+    public static float FinalDistance;
+    public static int FinalCoins;
 
     [SerializeField] int InternalDistance;
 
