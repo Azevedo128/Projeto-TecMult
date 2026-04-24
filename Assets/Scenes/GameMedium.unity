@@ -74295,7 +74295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   PlayerSpeed: 6
-  horizontalSpeed: 6
+  horizontalSpeed: 7
   rightBorder: 12.5
   leftBorder: -12.5
   isRunning: 0
