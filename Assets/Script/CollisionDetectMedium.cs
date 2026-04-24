@@ -14,7 +14,7 @@ public class CollisionDetectMedium : MonoBehaviour
     {
         if (other.CompareTag("Coin"))
     {
-        return; // ignora completamente
+        return; 
     }else
        StartCoroutine(CollisionEnd());
     }
